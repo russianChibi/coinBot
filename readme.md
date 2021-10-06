@@ -1,5 +1,5 @@
-Cách sử dụng:
-6 mode  chính:
+<p>Cách sử dụng:</p>
+<h1>6 mode  chính:</h1>
 	* release: up lên vps xuất lệnh mua và tự động mua bán sau 1 khoảng thời gian được định sẵn
 		-kh: thời gian mỗi nến. nên để mặc định là "1H"
 		-ir: INDICATORFILERELEASE: file luư kết quả (/var/www/html/indictor.txt)
