@@ -1,0 +1,78 @@
+
+CHIẾN THUẬT TÌM ĐIỂM VÀO: ICHIMOKU CLOUD, RSI, MACD
+- mây đỏ (span A < span B)
+	- (+2) cắt trong mây
+	- (+0) cắt dưới mấy
+	- (+3) cắt trên mây
+		- (+1 or -12) chưa từng cắt trước đó
+	- (-1) conversionLine đã lên quá nhiều (>spanB[i]*1.1) nên trừ điểm
+	- (-1) conversionLine chưa chạm tới mây (<spanA[i]*0.9) nên trừ điểm
+	- (+1) giá vượt mây
+	- kiểm tra độ dài của mây:
+		- (+3) dài 20 tiếng
+		- (+3) dài 35 tiếng
+	- kiểm tra độ sâu của mây:
+		- (+3) dảm 10%
+		- (+3) dảm 20%
+
+- mây Xanh (span A > span B)
+	- cắt trong mây,cắt trên mây
+		- (-4) mây xanh đi lên thì giảm điểm
+		- (-5) mây xanh  quá 5 tiếng thì giảm điểm
+	- (+1) cắt dưới mây
+	- (-2) conversionLine đã lên quá nhiều (>spanB[i]*1.1) nên trừ điểm
+	- (-2) conversionLine chưa chạm tới mây (<spanA[i]*0.9) nên trừ điểm
+	- (+1) giá vượt mây
+
+- laging span
+	- (+2) laging span vuot gia
+	- (+1) laging span ow giua nen
+	- (+1) laging span vuot span A
+	- (+1) laging span vuot span B
+- (-5) conversionLine di ngang trong 3 tieng
+- (-1) kt giá đã tăng nhiều chưa (trên 10%)
+
+- RSI:
+	- (-6) rsi qua cao
+	- (-6 or +3) kiem tra rsi dang la da tang hay da giam trong 7 tieng
+- MACD
+	-(-1) macd < macd signal:
+		- (-5) giao nhau và khoảng cách ngày càng tăng
+	- (+1) macd > macd signal:
+		- (+1) macd signal < 0
+		- macd và signal cùng > 0:
+			- (+1 or -6) kiểm tra xem đã giao nhau từ trước chưa (trong 7 nến)
+
+
+
+
+#####################
+stoploss;
+	>13%
+
+Chiến thuật mua:
+	checkForBuy:
+		- lấy toàn bộ cặt tiền trong indicator file mà chwua được mua (không có "xxxxxx")
+			- kiểm tra xem có đúng form và giao dịch = usdt hay không
+			- Kiểm tra đã có pair này ở trong boughtCoin hay chưa
+			- so sánh thời gian hiện tại với thời gian indicator đc tạo ra. nếu lớn hơn 1 nửa của cycle thì huy k mua
+			- Kiểm tra số dư usdt hiện tại có thỏa mãn hay k. Nếu k đủ thì cho quay về queue
+				- Mua và log ra file
+
+chiến thuật bán:
+	checkForSell:
+		- Lấy data trong file boughtCoinFile
+			- Nếu thời gian vượt quá cycle thì bán nóng
+			- Nếu thời gian vượt quá cycle mà k đủ 10 đô thì cũng coi như đã bán
+			- Giá mong muốn (hopePrice) lần đầu được set = giá mua *1.03
+			- Nếu hiện tại đang lỗ:
+				- Nếu đã từng lãi rồi (solanban>0) mà giá về giá mua thì bán toàn bộ
+				- lỗ 4% thì mua thêm 25% tổng số tiền
+				- lỗ 9% thì mua thêm 25% tổng số tiền
+				- lỗ 13% thì cắt lỗ
+			- Nếu hiện tại đang lãi:
+				- lãi 3% thì bán 30% tổng số coin, giá mong muốn (hopePrice) lên 6%
+				- lãi 6% thì bán 30% tổng số coin, giá mong muốn (hopePrice) lên 10%
+				- lãi 10% thì bán 50% tổng số coin, giá mong muốn (hopePrice) lên 14%
+				- lãi 14% thì bán Hết số coin còn lại
+			- Log ra file mua và bán
