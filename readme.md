@@ -1,4 +1,6 @@
+<p>Bot python3 tự động mua bán altcoin trên sàn binance. Sử dụng đồ thị mây ichimoku, RSI, MACD để tính điểm vào hợp lý và mua. Kết hợp với chiến thuật trung bình giá, chốt lời. Tất cả được mô tả trong file "thietke.txt"</p>
 <h1>Cách sử dụng:</h1>
+	<p> Sửa API ở trong file "config.py" bằng APi của binance
 <h2>6 mode  chính:</h2>
 	<h3>* release: up lên vps xuất lệnh mua và tự động mua bán sau 1 khoảng thời gian được định sẵn</h3>
 		<p>-kh: thời gian mỗi nến. nên để mặc định là "1H"</p>
