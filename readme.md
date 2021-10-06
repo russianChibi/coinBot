@@ -12,7 +12,7 @@
 		-it: INDICATORFILETEST: file luư kết quả (indicatortest.txt)
 		-me: metric thấp nhất. default 16
 		-tr: time range for mode test. format: "1 JAN, 2020++1 JAN, 2021"
-	<h3>* testIndicator: Kiểm tra kết quả của các lệnh mua được xuất ra từ mode "testStratergy". xuất ra số lượng lãi và lỗ theo khoảng % và các lệnh đúng và sai ở 2 file win.txt và lose.txt<h3>
+	<h3>* testIndicator: Kiểm tra kết quả của các lệnh mua được xuất ra từ mode "testStratergy". xuất ra số lượng lãi và lỗ theo khoảng % và các lệnh đúng và sai ở 2 file win.txt và lose.txt</h3>
 		-it: INDICATORFILETEST: file luư kết quả (indicatortest.txt)
 		-me: metric thấp nhất. default 16
 		-pf: profit mặc định 0.05
