@@ -1,38 +1,38 @@
 <h1>Cách sử dụng:</h1>
 <h2>6 mode  chính:</h2>
 	<h3>* release: up lên vps xuất lệnh mua và tự động mua bán sau 1 khoảng thời gian được định sẵn</h3>
-		-kh: thời gian mỗi nến. nên để mặc định là "1H"
-		-ir: INDICATORFILERELEASE: file luư kết quả (/var/www/html/indictor.txt)
-		-me: metric thấp nhất. default 16
-		-sba: số tiền mặc định mua cho mỗi lệnh. mặc định là 20
+		<p>-kh: thời gian mỗi nến. nên để mặc định là "1H"</p>
+		<p>-ir: INDICATORFILERELEASE: file luư kết quả (/var/www/html/indictor.txt)</p>
+		<p>-me: metric thấp nhất. default 16</p>
+		<p>-sba: số tiền mặc định mua cho mỗi lệnh. mặc định là 20</p>
 	<h3>* testStratergy: xuất ra các lệnh bán ra file trong 1 khoảng thời gian nhất định</h3>
-		-pair: cặt tiền cần kiểm tra. nếu k set thfi sẽ kiểm tra tất cả các cặp tiền của binance
-			-pl: vẽ các điểm trên đồ thị. chỉ hỗ trợ khi pair được set
-		-kh: thời gian mỗi nến. nên để mặc định là "1H"
-		-it: INDICATORFILETEST: file luư kết quả (indicatortest.txt)
-		-me: metric thấp nhất. default 16
-		-tr: time range for mode test. format: "1 JAN, 2020++1 JAN, 2021"
+		<p>-pair: cặt tiền cần kiểm tra. nếu k set thfi sẽ kiểm tra tất cả các cặp tiền của binance</p>
+		<p>-pl: vẽ các điểm trên đồ thị. chỉ hỗ trợ khi pair được set</p>
+		<p>-kh: thời gian mỗi nến. nên để mặc định là "1H"</p>
+		<p>-it: INDICATORFILETEST: file luư kết quả (indicatortest.txt)</p>
+		<p>-me: metric thấp nhất. default 16</p>
+		<p>-tr: time range for mode test. format: "1 JAN, 2020++1 JAN, 2021"</p>
 	<h3>* testIndicator: Kiểm tra kết quả của các lệnh mua được xuất ra từ mode "testStratergy". xuất ra số lượng lãi và lỗ theo khoảng % và các lệnh đúng và sai ở 2 file win.txt và lose.txt</h3>
-		-it: INDICATORFILETEST: file luư kết quả (indicatortest.txt)
-		-me: metric thấp nhất. default 16
-		-pf: profit mặc định 0.05
-		-stl: stoploss mặc định 0.15
-		-cy: chu kì lệnh mua bán. mặc định 72 tiếng
+		<p>-it: INDICATORFILETEST: file luư kết quả (indicatortest.txt)</p>
+		<p>-me: metric thấp nhất. default 16
+		<p>-pf: profit mặc định 0.05
+		<p>-stl: stoploss mặc định 0.15
+		<p>-cy: chu kì lệnh mua bán. mặc định 72 tiếng
 	<h3>* testAll: Là kết hợp của 2 mode "testStratergy" và "testIndicator":</h3>
-		-pair: cặt tiền cần kiểm tra. nếu k set thfi sẽ kiểm tra tất cả các cặp tiền của binance
-			-pl: vẽ các điểm trên đồ thị. chỉ hỗ trợ khi pair được set
-		-kh: thời gian mỗi nến. nên để mặc định là "1H"
-		-it: INDICATORFILETEST: file luư kết quả (indicatortest.txt)
-		-me: metric thấp nhất. default 16
-		-tr: time range for mode test. format: "1 JAN, 2020++1 JAN, 2021"
-		-pf: profit mặc định 0.05
-		-stl: stoploss mặc định 0.15
-		-cy: chu kì lệnh mua bán. mặc định 72 tiếng
+		<p>-pair: cặt tiền cần kiểm tra. nếu k set thfi sẽ kiểm tra tất cả các cặp tiền của binance
+		<p>-pl: vẽ các điểm trên đồ thị. chỉ hỗ trợ khi pair được set
+		<p>-kh: thời gian mỗi nến. nên để mặc định là "1H"
+		<p>-it: INDICATORFILETEST: file luư kết quả (indicatortest.txt)
+		<p>-me: metric thấp nhất. default 16
+		<p>-tr: time range for mode test. format: "1 JAN, 2020++1 JAN, 2021"
+		<p>-pf: profit mặc định 0.05
+		<p>-stl: stoploss mặc định 0.15
+		<p>-cy: chu kì lệnh mua bán. mặc định 72 tiếng
 	<h3>* analysisLog: Phân tích log của chương trình để xuất ra lãi, số lượng các lệnh mua, bán, TBG, chốt lời</h3>
-		-lp: Đường dẫn chứ thư mục gồm: file indicatorRelease.txt và thư mục log (mặc định là "." vì khi chạy chương trình sẽ tự sinh log ra thư mục hiện tại)
+		<p>-lp: Đường dẫn chứ thư mục gồm: file indicatorRelease.txt và thư mục log (mặc định là "." vì khi chạy chương trình sẽ tự sinh log ra thư mục hiện tại)
 	<h3>* panic: bán toàn bộ số token hiện tại (ngoại trừ bnb). Chỉ áp dụng với các token hỗ trợ usdt.</h3>
 	<h3>* analysisLog: xuất báo cáo. tình trạng mua bán.</h3>
-		-ar: analysis report file path. nếu k có tham số này thì sẽ xuất ra terminal. Sử dụng vòng lặp vô hạn nên dùng để up lên webserver cho dễ nhìn
+		<p>-ar: analysis report file path. nếu k có tham số này thì sẽ xuất ra terminal. Sử dụng vòng lặp vô hạn nên dùng để up lên webserver cho dễ nhìn
 
 <h2>Sử dụng control.txt để điều khiển luồng chương trình: chỉ cần ghi các lệnh sau vào file thì chương trình sẽ đọc và thực hiện</h2>
 	<p>stopBuy:  Ngừng mua vào</p>
