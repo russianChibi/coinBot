@@ -1,11 +1,11 @@
 <h1>Cách sử dụng:</h1>
 <h2>6 mode  chính:</h2>
-	<h3>* release: up lên vps xuất lệnh mua và tự động mua bán sau 1 khoảng thời gian được định sẵn<h3>
+	<h3>* release: up lên vps xuất lệnh mua và tự động mua bán sau 1 khoảng thời gian được định sẵn</h3>
 		-kh: thời gian mỗi nến. nên để mặc định là "1H"
 		-ir: INDICATORFILERELEASE: file luư kết quả (/var/www/html/indictor.txt)
 		-me: metric thấp nhất. default 16
 		-sba: số tiền mặc định mua cho mỗi lệnh. mặc định là 20
-	<h3>* testStratergy: xuất ra các lệnh bán ra file trong 1 khoảng thời gian nhất định<h3>
+	<h3>* testStratergy: xuất ra các lệnh bán ra file trong 1 khoảng thời gian nhất định</h3>
 		-pair: cặt tiền cần kiểm tra. nếu k set thfi sẽ kiểm tra tất cả các cặp tiền của binance
 			-pl: vẽ các điểm trên đồ thị. chỉ hỗ trợ khi pair được set
 		-kh: thời gian mỗi nến. nên để mặc định là "1H"
@@ -18,7 +18,7 @@
 		-pf: profit mặc định 0.05
 		-stl: stoploss mặc định 0.15
 		-cy: chu kì lệnh mua bán. mặc định 72 tiếng
-	<h3>* testAll: Là kết hợp của 2 mode "testStratergy" và "testIndicator":<h3>
+	<h3>* testAll: Là kết hợp của 2 mode "testStratergy" và "testIndicator":</h3>
 		-pair: cặt tiền cần kiểm tra. nếu k set thfi sẽ kiểm tra tất cả các cặp tiền của binance
 			-pl: vẽ các điểm trên đồ thị. chỉ hỗ trợ khi pair được set
 		-kh: thời gian mỗi nến. nên để mặc định là "1H"
@@ -28,10 +28,10 @@
 		-pf: profit mặc định 0.05
 		-stl: stoploss mặc định 0.15
 		-cy: chu kì lệnh mua bán. mặc định 72 tiếng
-	<h3>* analysisLog: Phân tích log của chương trình để xuất ra lãi, số lượng các lệnh mua, bán, TBG, chốt lời<h3>
+	<h3>* analysisLog: Phân tích log của chương trình để xuất ra lãi, số lượng các lệnh mua, bán, TBG, chốt lời</h3>
 		-lp: Đường dẫn chứ thư mục gồm: file indicatorRelease.txt và thư mục log (mặc định là "." vì khi chạy chương trình sẽ tự sinh log ra thư mục hiện tại)
-	<h3>* panic: bán toàn bộ số token hiện tại (ngoại trừ bnb). Chỉ áp dụng với các token hỗ trợ usdt.<h3>
-	<h3>* analysisLog: xuất báo cáo. tình trạng mua bán.<h3>
+	<h3>* panic: bán toàn bộ số token hiện tại (ngoại trừ bnb). Chỉ áp dụng với các token hỗ trợ usdt.</h3>
+	<h3>* analysisLog: xuất báo cáo. tình trạng mua bán.</h3>
 		-ar: analysis report file path. nếu k có tham số này thì sẽ xuất ra terminal. Sử dụng vòng lặp vô hạn nên dùng để up lên webserver cho dễ nhìn
 
 <h2>Sử dụng control.txt để điều khiển luồng chương trình: chỉ cần ghi các lệnh sau vào file thì chương trình sẽ đọc và thực hiện</h2>
