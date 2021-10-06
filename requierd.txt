@@ -1,0 +1,7 @@
+yfinance
+matplotlib
+TA-Lib
+python-binance
+numpy
+pandas
+pandas_datareader

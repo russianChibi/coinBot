@@ -1,0 +1,14 @@
+1514689200000|pair=LTCUSDT|closePrice=218.75|metric=15
+1512730800000|pair=NEOUSDT|closePrice=35.134|metric=16
+1514160000000|pair=ETHUSDT|closePrice=673.54|metric=15
+1510628400000|pair=ETHUSDT|closePrice=315.98|metric=15
+1510498800000|pair=ETHUSDT|closePrice=306.42|metric=16
+1509145200000|pair=ETHUSDT|closePrice=296.33|metric=16
+1508806800000|pair=ETHUSDT|closePrice=302.97|metric=16
+1505062800000|pair=ETHUSDT|closePrice=298.36|metric=16
+1504609200000|pair=ETHUSDT|closePrice=295.98|metric=18
+1513656000000|pair=BTCUSDT|closePrice=18690.98|metric=15
+1510567200000|pair=BTCUSDT|closePrice=6397.95|metric=22
+1510210800000|pair=BTCUSDT|closePrice=7345.05|metric=15
+1510102800000|pair=BTCUSDT|closePrice=7275.0|metric=16
+1504609200000|pair=BTCUSDT|closePrice=4246.82|metric=15

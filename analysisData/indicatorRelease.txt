@@ -1,0 +1,5 @@
+xxxxxx1631577600000|pair=FUNUSDT|closePrice=0.0212|metric=19
+xxxxxx1631577600000|pair=WINGUSDT|closePrice=20.92|metric=19
+xxxxxx1631566800000|pair=XECUSDT|closePrice=0.00022272|metric=19
+xxxxxx1631563200000|pair=AUDUSDT|closePrice=0.7356|metric=19
+xxxxxx1631563200000|pair=PERPUSDT|closePrice=15.01|metric=20

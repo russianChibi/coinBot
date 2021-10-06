@@ -1,0 +1,10 @@
+BUY:PERPUSDT|Price:15.03|amount:100$
+BUY:PERPUSDT|Price:15.02|amount:20.0$|TBG khi Lo <=3%
+BUY:AUDUSDT|Price:0.7356|amount:100$
+BUY:AUDUSDT|Price:0.7353|amount:20.0$|TBG khi Lo <=3%
+BUY:XECUSDT|Price:0.00022237|amount:100$
+BUY:XECUSDT|Price:0.00022143|amount:20.0$|TBG khi Lo <=3%
+BUY:WINGUSDT|Price:20.89|amount:100$
+BUY:WINGUSDT|Price:20.87|amount:20.0$|TBG khi Lo <=3%
+BUY:FUNUSDT|Price:0.02122|amount:100$
+BUY:FUNUSDT|Price:0.02118|amount:20.0$|TBG khi Lo <=3%
